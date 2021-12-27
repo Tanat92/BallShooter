@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Ball Shooter</title>
+  </head>
+  <body style="text-align: center">
+    <div id="vk_ads_135982"></div>
+<script type="text/javascript">
+  setTimeout(function() {
+    var adsParams = {"ad_unit_id":135982,"ad_unit_hash":"e71c70fe1f301c5deaf837435abe5191"};
+    function vkAdsInit() {
+      VK.Widgets.Ads('vk_ads_135982', {}, adsParams);
+    }
+    if (window.VK && VK.Widgets) {
+      vkAdsInit();
+    } else {
+      if (!window.vkAsyncInitCallbacks) window.vkAsyncInitCallbacks = [];
+      vkAsyncInitCallbacks.push(vkAdsInit);
+      var protocol = ((location.protocol === 'https:') ? 'https:' : 'http:');
+      var adsElem = document.getElementById('vk_ads_135982');
+      var scriptElem = document.createElement('script');
+      scriptElem.type = 'text/javascript';
+      scriptElem.async = true;
+      scriptElem.src = protocol + '//vk.com/js/api/openapi.js?169';
+      adsElem.parentNode.insertBefore(scriptElem, adsElem.nextSibling);
+    }
+  }, 0);
+</script>
+    <canvas id="unity-canvas" width=640 height=480 style="width: 640px; height: 480px; background: #231F20"></canvas>
+    <script src="Build/1Build.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/1Build.data",
+        frameworkUrl: "Build/1Build.framework.js",
+        codeUrl: "Build/1Build.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Tanat",
+        productName: "Ball Shooter",
+        productVersion: "1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
