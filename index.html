@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Ball Shooter</title>
+    <script src="vk-bridge\src\index.ts"></script>
   </head>
   <body style="text-align: center">
     <script>
-      require import bridge from '@vk-bridge';
+      var bridge = require('bridge');
       bridge.send("VKWebAppInit", {});
       bridge.send("VKWebAppShowNativeAds", {ad_format:"preloader"})
 .then(data => console.log(data.result))
